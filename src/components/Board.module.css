@@ -1,20 +1,36 @@
 .board {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-gap: 5px;
     justify-content: center;
     align-items: center;
-    width: 50vmin;
-    height: 50vmin;
-    margin: 5vmin auto;
+    width: fit-content;
+    margin: 10vmin auto;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 10px;
 }
 
 .playAgainButton {
-    margin: 20px 45vw;
-    padding: 10px 20px;
-    font-size: 16px;
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    font-size: 18px;
     font-weight: bold;
-    background-color: #007bff;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.playAgainButton:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.playAgainButton:active {
+    transform: scale(0.98);
 }

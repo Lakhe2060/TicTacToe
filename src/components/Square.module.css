@@ -1,14 +1,26 @@
 .square {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
     outline: none;
-    border: 1px solid black;
-    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
     cursor: pointer;
-    outline: none;
-    padding: 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.square:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+}
+
+.square:active {
+    background-color: #e9e9e9;
+    transform: scale(0.98);
 }
